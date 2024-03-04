@@ -2,7 +2,7 @@
 
 public sealed class DogTests
 {
-    /*
+    
      
     [Fact]
     public void Construction()
@@ -57,6 +57,4 @@ public sealed class DogTests
     
     [Fact]
     public void StringRepresentation() => new Dog(new()).ToString().Should().Be("I'm a dog");
-    
-    */
 }

@@ -2,7 +2,7 @@
 
 public sealed class CatTests
 {
-    /*
+    
      
     private readonly Cat _cat = new();
     
@@ -63,5 +63,5 @@ public sealed class CatTests
     [Fact]
     public void StringRepresentation() => new Cat().ToString().Should().Be("I'm a cat");
     
-    */
+    
 }
