@@ -8,17 +8,21 @@ using System.Threading.Tasks;
 namespace PetsAndFleas;
 public class Pet
 {
-    public static int NextPetId { get; private set;}
     public int PetId { get; }
+    public static int NextPetId { get; private set; }
     public int RemainingBites { get; private set; }
     public Pet()
     {
-        NextPetId = PetId++;
+        NextPetId = 0;
         RemainingBites = 100;
     }
-    int GetBitten(int bites)
+    public int GetBitten(int bites)
     {
         RemainingBites -= bites;
-        return RemainingBites;
+        return 0;
+    }
+    public void PrintCtorInfo(string info)
+    {
+
     }
 }
