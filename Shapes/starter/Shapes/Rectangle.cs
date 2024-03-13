@@ -17,8 +17,12 @@ public class Rectangle : Shape
     
     public override bool DrawSelf()
     {
-        Point point1 = new Point(Point.X - 10, Point.Y - 10);
-        Point point2 = new Point(Point.X + 10, Point.Y + 10);
+        Random randomHeigth = new Random();
+        Random randomWidth = new Random();
+        int width = randomHeigth.Next(0, 100);
+        int randomWidth.Next(0, 100);
+        Point point1 = new Point(Point.X - 100, Point.Y - 100);
+        Point point2 = new Point(Point.X + 100, Point.Y + 100);
         SimpleDrawing.DrawRectangle(point1, point2, fillColor: Brushes.Red);
         return true;
     }
